@@ -1,14 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>შენი სივრცე</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Hello world</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <button>Click me</button>
+<body class="theme-light">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand-box">
+                <div class="brand-mark">S</div>
+                <div>
+                    <span class="brand-label">workspace</span>
+                    <h2>შენი სივრცე</h2>
+                </div>
+            </div>
+
+            <nav class="nav-menu" aria-label="Sidebar navigation">
+                <a href="#" class="nav-item active">
+                    <span class="icon">🏠</span>
+                    <span>მთავარი გვერდი</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📊</span>
+                    <span>მიმოხილვები</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">💬</span>
+                    <span>წერილები</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">❔</span>
+                    <span>დახმარება</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙️</span>
+                    <span>პარამეტრები</span>
+                </a>
+            </nav>
+
+            <div class="theme-panel">
+                <div class="theme-labels">
+                    <span>Dark mode</span>
+                </div>
+                <label class="switch" aria-label="Toggle dark mode">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Dashboard</p>
+                    <h1>მთავარი გვერდი</h1>
+                </div>
+                <button class="primary-btn">+ ახალი</button>
+            </header>
+
+            <section class="stats-grid">
+                <article class="stat-card accent-purple">
+                    <div class="card-icon">📈</div>
+                    <div>
+                        <p>საერთო შემოსავალი</p>
+                        <h3>$24.8K</h3>
+                    </div>
+                </article>
+                <article class="stat-card accent-blue">
+                    <div class="card-icon">👥</div>
+                    <div>
+                        <p>შემსვლელები</p>
+                        <h3>18.4K</h3>
+                    </div>
+                </article>
+                <article class="stat-card accent-green">
+                    <div class="card-icon">✅</div>
+                    <div>
+                        <p>დასრულებული</p>
+                        <h3>1,280</h3>
+                    </div>
+                </article>
+            </section>
+
+            <section class="content-panel">
+                <div class="panel-header">
+                    <h2>აქტივობები</h2>
+                    <a href="#">დახმარება</a>
+                </div>
+
+                <ul class="activity-list">
+                    <li>
+                        <span class="dot blue"></span>
+                        <div>
+                            <strong>მომხმარებლის რეგისტრაცია</strong>
+                            <p>ახალი მომხმარებელი დაემატა 2 წუთის წინ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="dot green"></span>
+                        <div>
+                            <strong>დავალების დასრულება</strong>
+                            <p>საოფისე სამუშაო 97%-ით დასრულდა</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="dot purple"></span>
+                        <div>
+                            <strong>მიმოხილვა</strong>
+                            <p>კლენტი უკუკავშირის გამოგზავნას ითხოვს</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
